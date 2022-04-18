@@ -55,7 +55,7 @@ class CompanyController extends Controller
             'password' => $request->password,
         ]);
 
-       return redirect('company/home');
+       return redirect('company/login');
     }
 
     public function login()
@@ -76,7 +76,7 @@ class CompanyController extends Controller
 
         
         if (Company::where($credentials)->first()) {
-            return redirect()->intended('company/login');
+            return redirect()->intended('company/home');
            
         }
 
