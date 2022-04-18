@@ -49,7 +49,7 @@ class IndividualController extends Controller
             'username' => $request->username,
             'password' => $request->password,
         ]);
-        return redirect('individual/dashboard');
+        return redirect('/individual/login');
     }
 
     public function login()
