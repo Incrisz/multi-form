@@ -55,7 +55,7 @@ class CompanyController extends Controller
             'password' => $request->password,
         ]);
 
-       return redirect('home');
+       return redirect('company/dashboard');
     }
 
     public function login()
